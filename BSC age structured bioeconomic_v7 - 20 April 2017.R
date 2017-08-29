@@ -3,6 +3,7 @@
 # Author: Ren Cabral
 # 29 August 2017 - revised
 #test clean data
+#edit here --- test
 
 BSCFUNCTION<-function(BerriedPolicyCompliance,PricePremium,TrawlBanCompliance, SizeLCompliance, Efforts,PLOTRESULTS,SIZELIMIT,SIZELIMITpolicy,TRAWLBANpolicy,OPENACCESSpolicy){
   
