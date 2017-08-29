@@ -2,11 +2,7 @@
 # 28 Apr 2017
 # Author: Ren Cabral
 # 29 August 2017 - revised
-
-
-
-
-
+#test clean data
 
 BSCFUNCTION<-function(BerriedPolicyCompliance,PricePremium,TrawlBanCompliance, SizeLCompliance, Efforts,PLOTRESULTS,SIZELIMIT,SIZELIMITpolicy,TRAWLBANpolicy,OPENACCESSpolicy){
   
@@ -20,7 +16,7 @@ BSCFUNCTION<-function(BerriedPolicyCompliance,PricePremium,TrawlBanCompliance, S
   data <- data.frame(age=age)
   data$CW<-187*(1-exp(-1.13*((data$age/12)+0.0038)))
   maturity<- 1/(12*(1+exp(12.5*(1-(data$CW/118.98)))))
-  data$m<-0.345
+  data$m<-0
   data$m[6:length(age)]<-maturity[6:length(age)]
   natmort<-exp(-0.0934)
   eggs<-((19.128*data$CW)-1517.1)*1000
